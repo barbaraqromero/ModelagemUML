@@ -4,6 +4,10 @@ public class Inimigos {
   private String nome;
   private double vida;
 
+  public Inimigos() {
+
+  }
+
   public Inimigos(String nome, double vida) {
     this.nome = nome;
     this.vida = vida;
@@ -35,8 +39,7 @@ public class Inimigos {
   }
 
   public double exibirVida() {
-    return exibirVida();
-
+    return getVida();
 
   }
 }
