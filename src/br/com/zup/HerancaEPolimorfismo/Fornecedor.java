@@ -1,6 +1,6 @@
 package br.com.zup.HerancaEPolimorfismo;
 
-public class Fornecedor extends Pessoa{
+public class Fornecedor extends Pessoa {
   private double valorCredito;
   private double valorDivida;
 
@@ -28,5 +28,10 @@ public class Fornecedor extends Pessoa{
 
   public void setValorDivida(double valorDivida) {
     this.valorDivida = valorDivida;
+  }
+
+  public double obterSaldo() {
+    double saldo = valorCredito - valorDivida;
+    return saldo;
   }
 }
