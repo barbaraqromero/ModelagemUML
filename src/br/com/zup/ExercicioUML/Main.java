@@ -8,5 +8,9 @@ public class Main {
 
     Rasteiros rasteiro = new Rasteiros("Thanos", 250, 280);
     Voadores voador = new Voadores("Abutre", 500, 650);
+
+    guerreiro.getVida();
+    guerreiro.aplicarDano();
+
   }
 }
