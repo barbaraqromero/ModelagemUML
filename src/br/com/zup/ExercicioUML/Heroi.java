@@ -4,7 +4,7 @@ public class Heroi {
   private String nome;
   private double vida;
 
-  public Heroi(){
+  public Heroi() {
 
   }
 
@@ -33,15 +33,16 @@ public class Heroi {
     this.vida = vida;
   }
 
-  public void trocarNome(String nome){
+  public void trocarNome(String nome) {
     setNome(nome);
   }
 
-  public void receberDano(double dano){
+  public void receberDano(double dano) {
+
     setVida(getVida() - dano);
   }
 
-  public double exibirVida(){
+  public double exibirVida() {
     return getVida();
   }
 }

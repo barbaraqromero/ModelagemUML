@@ -8,7 +8,15 @@ public class Rasteiros extends Inimigos{
     this.danoEspinhos = danoEspinhos;
   }
 
-  public double aplicarDano(int danoAplicado){
+  public double getDanoEspinhos() {
+    return danoEspinhos;
+  }
+
+  public void setDanoEspinhos(double danoEspinhos) {
+    this.danoEspinhos = danoEspinhos;
+  }
+
+  public double aplicarDano(){
     return danoEspinhos;
   }
 }
