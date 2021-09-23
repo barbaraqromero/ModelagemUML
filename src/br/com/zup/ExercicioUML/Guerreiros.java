@@ -1,4 +1,14 @@
 package br.com.zup.ExercicioUML;
 
-public class Guerreiros {
+public class Guerreiros extends Heroi {
+  private double poderAtaque;
+
+  public Guerreiros(String nome, double vida, double poderAtaque) {
+    super(nome, vida);
+    this.poderAtaque = poderAtaque;
+  }
+
+  private double aplicarDano(){
+    return aplicarDano();
+  }
 }
