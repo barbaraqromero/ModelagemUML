@@ -25,7 +25,7 @@ public class Heroi {
     this.vida = vida;
   }
 
-  public void nome(String nome){
+  public void trocarNome(String nome){
     String novoNome = getNome();
     setNome(novoNome);
   }
