@@ -36,7 +36,7 @@ public class Inimigos {
 
   public double exibirVida() {
     return exibirVida();
+
+
   }
-
-
 }
