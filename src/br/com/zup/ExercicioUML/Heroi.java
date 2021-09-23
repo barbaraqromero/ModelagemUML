@@ -24,4 +24,17 @@ public class Heroi {
   public void setVida(double vida) {
     this.vida = vida;
   }
+
+  public void nome(String nome){
+    String novoNome = getNome();
+    setNome(novoNome);
+  }
+
+  public void receberDano(double dano){
+    double danoAplicado = dano - getVida();
+  }
+
+  public double exibirVida(){
+    return exibirVida();
+  }
 }
