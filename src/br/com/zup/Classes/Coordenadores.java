@@ -13,4 +13,10 @@ public class Coordenadores extends  Funcionarios{
     super(nome, CPF, numeroDeRegistro, orgaoDeLotacao, salario);
   }
 
+  @Override
+  public double aumentoSalario() {
+    double valorAumento = getSalario() * 0.05;
+    double novoSalario = getSalario() + valorAumento;
+    return novoSalario;
+  }
 }
