@@ -12,4 +12,5 @@ public class Coordenadores extends  Funcionarios{
   public Coordenadores(String nome, String CPF, String numeroDeRegistro, String orgaoDeLotacao, double salario) {
     super(nome, CPF, numeroDeRegistro, orgaoDeLotacao, salario);
   }
+
 }

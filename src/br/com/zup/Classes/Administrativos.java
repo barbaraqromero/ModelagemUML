@@ -12,4 +12,21 @@ public class Administrativos extends Funcionarios{
     this.funcao = funcao;
     this.senioridade = senioridade;
   }
+
+  //Getters e Setters
+  public String getFuncao() {
+    return funcao;
+  }
+
+  public void setFuncao(String funcao) {
+    this.funcao = funcao;
+  }
+
+  public String getSenioridade() {
+    return senioridade;
+  }
+
+  public void setSenioridade(String senioridade) {
+    this.senioridade = senioridade;
+  }
 }
