@@ -7,14 +7,16 @@ public class Professores extends Funcionarios{
   private String disciplinaMinistrada;
   private int qtdDeAlunos;
   private int qtdDeTurmas;
+  private Turma turma;
 
   //Método construtor
-  public Professores(String nome, String CPF, String numeroDeRegistro, String orgaoDeLotacao, double salario, String nivelDeGraduacao, String disciplinaMinistrada, int qtdDeAlunos, int qtdDeTurmas) {
+  public Professores(String nome, String CPF, String numeroDeRegistro, String orgaoDeLotacao, double salario, String nivelDeGraduacao, String disciplinaMinistrada, int qtdDeAlunos, int qtdDeTurmas, Turma turma) {
     super(nome, CPF, numeroDeRegistro, orgaoDeLotacao, salario);
     this.nivelDeGraduacao = nivelDeGraduacao;
     this.disciplinaMinistrada = disciplinaMinistrada;
     this.qtdDeAlunos = qtdDeAlunos;
     this.qtdDeTurmas = qtdDeTurmas;
+    this.turma = turma;
   }
 
   //Getters e Setters
@@ -48,5 +50,13 @@ public class Professores extends Funcionarios{
 
   public void setQtdDeTurmas(int qtdDeTurmas) {
     this.qtdDeTurmas = qtdDeTurmas;
+  }
+
+  public Turma getTurma() {
+    return turma;
+  }
+
+  public void setTurma(Turma turma) {
+    this.turma = turma;
   }
 }
