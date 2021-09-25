@@ -13,6 +13,11 @@ public class Coordenadores extends  Funcionarios{
     super(nome, CPF, numeroDeRegistro, orgaoDeLotacao, salario);
   }
 
+  public void adicionaProfessor(Professores novoProfessor){
+    professoresSupervisionados.add(novoProfessor);
+
+  }
+
   @Override
   public double aumentoSalario() {
     double valorAumento = getSalario() * 0.05;
