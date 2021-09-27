@@ -70,7 +70,7 @@ public class Funcionarios {
   //Método para aumentar o salário
 
   public double aumentoSalario() {
-    double novoSalario = salario + (salario * 0.1);
-    return novoSalario;
+    return salario + (salario * 0.1);
+    //return novoSalario;
   }
 }

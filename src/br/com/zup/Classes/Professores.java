@@ -70,6 +70,7 @@ public class Professores extends Funcionarios {
 
   public void adicionarTurma(Turma turmaAdicionada){
     turma = turmaAdicionada;
+    System.out.println("Turma: " + turmaAdicionada.getSerie());
 
   }
 }
