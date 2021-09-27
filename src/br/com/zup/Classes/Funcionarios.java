@@ -18,6 +18,10 @@ public class Funcionarios {
     this.salario = salario;
   }
 
+  public Funcionarios(String nome) {
+    this.nome = nome;
+  }
+
   //Getters e Setters
   public String getNome() {
     return nome;
@@ -59,9 +63,9 @@ public class Funcionarios {
     this.salario = salario;
   }
 
-  public double aumentoSalario(){
-    double valorAumento = salario * 0.1;
-    double novoSalario = salario + valorAumento;
+  //Método para aumentar o salário
+  public double aumentoSalario() {
+    double novoSalario = salario + (salario * 0.1);
     return novoSalario;
   }
 }
