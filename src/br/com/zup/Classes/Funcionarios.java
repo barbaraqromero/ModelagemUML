@@ -3,6 +3,7 @@ package br.com.zup.Classes;
 public class Funcionarios {
 
   // Aplicando atributos
+
   private String nome;
   private String CPF;
   private String numeroDeRegistro;
@@ -10,6 +11,7 @@ public class Funcionarios {
   private double salario;
 
   //Método construtor
+
   public Funcionarios(String nome, String CPF, String numeroDeRegistro, String orgaoDeLotacao, double salario) {
     this.nome = nome;
     this.CPF = CPF;
@@ -18,11 +20,13 @@ public class Funcionarios {
     this.salario = salario;
   }
 
+
   public Funcionarios(String nome) {
     this.nome = nome;
   }
 
   //Getters e Setters
+
   public String getNome() {
     return nome;
   }
@@ -64,6 +68,7 @@ public class Funcionarios {
   }
 
   //Método para aumentar o salário
+
   public double aumentoSalario() {
     double novoSalario = salario + (salario * 0.1);
     return novoSalario;
