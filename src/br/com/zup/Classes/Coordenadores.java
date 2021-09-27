@@ -18,11 +18,17 @@ public class Coordenadores extends Funcionarios {
   //Método para adicionar professor na lista
 
   public void adicionaProfessor(Professores novoProfessor) {
-    professoresSupervisionados.add(novoProfessor);
+    if (professoresSupervisionados.size() <= 5) {
+      professoresSupervisionados.add(novoProfessor);
+    } else {
+      System.out.println("Limite máximo atingido!");
+    }
+
   }
 
-  public void exibirLista(){
-    for (Professores referencia : professoresSupervisionados){
+  //fazer level up
+  public void exibirLista() {
+    for (Professores referencia : professoresSupervisionados) {
       System.out.println("Professor adicionado: " + referencia.getNome());
     }
   }
@@ -31,7 +37,7 @@ public class Coordenadores extends Funcionarios {
 
   @Override
   public double aumentoSalario() {
-    double valorAumento = getSalario()+ (getSalario() * 0.05);
+    double valorAumento = getSalario() + (getSalario() * 0.05);
     return valorAumento;
   }
 }

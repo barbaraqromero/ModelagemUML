@@ -66,7 +66,7 @@ public class Professores extends Funcionarios {
     this.turma = turma;
   }
 
-  //Método para adicionar Turma
+  //Método para adicionar Turma - REFAZER USANDO LISTA
 
   public void adicionarTurma(Turma turmaAdicionada){
     turma = turmaAdicionada;
